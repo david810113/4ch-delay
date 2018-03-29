@@ -108,7 +108,7 @@ always@(negedge head_flag or negedge rstn)
 		if(rstn==1'b0)
 		buffer_2 <= 14'd0;
 		else
-		buffer_2 <= ad_1 - 12'd1960;
+		buffer_2 <= ad_1 - 14'd1965;
 	end	
 	
 always@(negedge head_flag or negedge rstn)
@@ -116,7 +116,7 @@ always@(negedge head_flag or negedge rstn)
 		if(rstn==1'b0)
 		buffer_3 <= 14'd0;
 		else
-		buffer_3 <= ad_2 - 12'd2102;
+		buffer_3 <= ad_2 - 12'd2080;
 	end	
 	
 always@(negedge head_flag or negedge rstn)
@@ -124,7 +124,7 @@ always@(negedge head_flag or negedge rstn)
 		if(rstn==1'b0)
 		buffer_4 <= 14'd0;
 		else
-		buffer_4 <= ad_3 - 12'd2128;
+		buffer_4 <= ad_3 - 12'd2090;
 	end	
 	
 always@(negedge head_flag or negedge rstn)
@@ -132,7 +132,7 @@ always@(negedge head_flag or negedge rstn)
 		if(rstn==1'b0)
 		buffer_5 <= 14'd0;
 		else
-		buffer_5 <= ad_4 - 12'd2140;
+		buffer_5 <= ad_4 - 12'd2100;
 	end	
 
 assign sum = (buffer_2 + buffer_3 + buffer_4 + buffer_5);

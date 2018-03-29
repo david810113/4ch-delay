@@ -6,18 +6,14 @@ output  miso;
 reg [13:0]reff_temp;
 
 
-
-
-
-
-
 always@(negedge sck or negedge rstn)
 	begin
 	
 		if(rstn==1'b0)
 		reff_temp <=  14'd0;
 		else if(head_flag==1'b0)
-		reff_temp[13:0] <=  in_p2s[13:0];
+		//reff_temp[13:0] <=  14'd200;
+		reff_temp[13:0] <=  in_p2s[13:3];
 		else
 		reff_temp[13:0] <=  {reff_temp[12:0],1'd0};
 	end

@@ -622,7 +622,7 @@ assign multiple =({{15{e[13]}}, e} * {{15{reff[13]}}, reff});
         weight_in_31 <=  weight_in_31;
     end 
 
-divdiv divdiv_t(.dividend({{1{dividend[28]}},dividend[28:1]}), .divisor({{7{n[31]}},n[31:10]}),.weight_pre(weight_pre),.clk(clk), .rstn(rstn), .enable(flag_div), .result(w_t));
+divdiv divdiv_t(.dividend({{7{dividend[28]}},dividend[28:7]}), .divisor({{12{n[31]}},n[31:15]}),.weight_pre(weight_pre),.clk(clk), .rstn(rstn), .enable(flag_div), .result(w_t));
 
 
 ram_multiple ram_multiple_1 (

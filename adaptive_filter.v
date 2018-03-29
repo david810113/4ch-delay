@@ -369,7 +369,7 @@ end
 
 
 
-assign d = d_sum>> 10;
+assign d = d_sum>>15;
 
 always@(posedge clk or negedge rstn)
 begin

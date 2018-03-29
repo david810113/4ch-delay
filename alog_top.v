@@ -286,7 +286,7 @@ assign shift_data_state = curr_state[3];
         if (rstn == 0)
              dout <=   14'd0;
         else
-             dout <=   (d_2 + d_3);
+             dout <=   d_2 + d_3 + 14'd3000;
     end
     
 
